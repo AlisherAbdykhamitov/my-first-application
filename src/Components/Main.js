@@ -1,4 +1,7 @@
 import React from "react";
+import Card from "./Card";
+
+
 const Main=()=>{
     return(
         <>
@@ -10,13 +13,17 @@ const Main=()=>{
                     <h2>Find your book</h2>
                     <div className="search">
                         <input type="text" placeholder="Enter your book name"/>
-                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button><i className="fas fa-search"></i>   </button>
                     </div>
                     <img src="./images/bg2.png" alt=""/>
                 </div>
             </div>
+            <div className="container">
+                <Card/>
+            </div>
         </>
     )
 }
+
 
 export default Main;
